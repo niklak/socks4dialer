@@ -1,6 +1,6 @@
 # SOCKS4DIALER
 
-This package contains a SOCKS4 protocol dialer designed to work with a standard HTTP client.
+This package contains a SOCKS4 protocol dialer to work with a standard (golang) HTTP client.
 
 ## Install the package
 ```

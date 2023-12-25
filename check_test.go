@@ -19,13 +19,13 @@ func Test_doCheckRequest(t *testing.T) {
 		// TODO: replaces proxy addresses with yours.
 		{name: "test socks4 http request #0",
 			args:     args{proxyAddr: "socks4://ip:port", dstURL: "http://icanhazip.com"},
-			wantBody: []byte("47.243.50.83:80"),
+			wantBody: []byte("ip:port"),
 			wantErr:  false,
 		},
 
 		{name: "test socks4 https request #0",
-			args:     args{proxyAddr: "socks4://ip:port", dstURL: "http://icanhazip.com"},
-			wantBody: []byte("123.182.58.227:8089"),
+			args:     args{proxyAddr: "socks4://ip:port", dstURL: "https://icanhazip.com"},
+			wantBody: []byte("ip:port"),
 			wantErr:  false,
 		},
 	}
